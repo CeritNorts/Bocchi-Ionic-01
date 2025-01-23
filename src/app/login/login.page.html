@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <form #bodoque="ngForm" (ngSubmit)="login(bodoque)">
+    <ion-item>
+      <ion-input name="email" [(ngModel)]="email" label="Correo electronico" label-placement="floating" type="email" required=""></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input name="password" [(ngModel)]="password" label="password" label-placement="floating" type="password" value="password"></ion-input>
+    </ion-item>
+    <ion-button type="submit" color="success" >Success</ion-button> 
+  </form>
+</ion-content>
+  
+  
+  

@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title>date</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div>
+    <ion-datetime></ion-datetime>
+  </div>
+  <div>
+    <ion-datetime-button datetime="datetime"></ion-datetime-button>
+
+  <ion-modal [keepContentsMounted]="true">
+    <ng-template>
+      <ion-datetime id="datetime"></ion-datetime>
+    </ng-template>
+  </ion-modal>
+  </div>
+  <div>
+    <ion-picker>
+      <ion-picker-column value="Eli">
+        <ion-picker-column-option value="" disabled="true">--</ion-picker-column-option>
+        <ion-picker-column-option value="javascript">Emmanuel</ion-picker-column-option>
+        <ion-picker-column-option value="typescript">Pablo</ion-picker-column-option>
+        <ion-picker-column-option value="rust">Oscar</ion-picker-column-option>
+        <ion-picker-column-option value="c#">Tano</ion-picker-column-option>
+        <ion-picker-column-option value="javascript">Fer</ion-picker-column-option>
+        <ion-picker-column-option value="typescript">Mango</ion-picker-column-option>
+        <ion-picker-column-option value="rust">Tinn</ion-picker-column-option>
+        <ion-picker-column-option value="c#">Eli</ion-picker-column-option>
+      </ion-picker-column>
+    </ion-picker>
+  </div>
+</ion-content>

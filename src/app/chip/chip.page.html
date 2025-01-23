@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Chip</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div>
+    <ion-chip>Eli mimido</ion-chip>
+    <ion-chip [disabled]="true">Eli descansado</ion-chip>
+    <ion-chip [outline]="true">Eli morido</ion-chip>
+  </div>
+  <div>
+    <ion-chip>
+      <ion-avatar>
+        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+      <ion-label>Este es el comienxo de la era chip</ion-label>
+      <ion-icon name="close-circle"></ion-icon>
+    </ion-chip>
+    
+    <ion-chip>
+      <ion-icon name="pin" color="primary"></ion-icon>
+      <ion-label>Chip me recuerda al carrito de cars el malo</ion-label>
+      <ion-icon name="close"></ion-icon>
+    </ion-chip>
+  </div>
+  <div>
+    <ion-chip>Default</ion-chip>
+    <ion-chip color="primary">Ja-jaime</ion-chip>
+    <ion-chip color="secondary">Nanci</ion-chip>
+    <ion-chip color="tertiary">Eva precisa</ion-chip>
+    <ion-chip color="success">Trujillo</ion-chip>
+    <ion-chip color="warning">Aturo</ion-chip>
+    <ion-chip color="danger">Acosta</ion-chip>
+    <ion-chip color="light">Daniel</ion-chip>
+    <ion-chip color="medium">Eliezer</ion-chip>
+    <ion-chip color="dark">Eli mimido</ion-chip>
+  </div>
+  <div>
+    <ion-chip>Multiplataforma</ion-chip>
+  </div>
+</ion-content>
