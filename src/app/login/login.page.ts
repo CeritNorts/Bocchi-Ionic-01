@@ -1,6 +1,7 @@
 import { NgFor } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { NavController } from '@ionic/angular';
 import { from } from 'rxjs';
 
 @Component({
@@ -14,7 +15,10 @@ export class LoginPage implements OnInit {
   email: string = '';
   password: string = '';
 
-  constructor() { }
+  constructor(
+    //sirve par navegar en pagina
+    private navController: NavController,
+  ) { }
 
   ngOnInit() {
   }
@@ -34,7 +38,7 @@ export class LoginPage implements OnInit {
    
 
     if(this.email === 'admin' && this.password === 'admin'){
-      console.log("Login Aceptado");
+      this.navController.navigateForward('/inicio')
     }else {
       console.log("Login no aceptado");
     }
