@@ -36,12 +36,11 @@ export class LoginPage implements OnInit {
       return;
     }
    
-
-    if(this.email === 'admin' && this.password === 'admin'){
+    if(this.email === 'bocchi17@gmail.com' && this.password === 'Bocchi17'){
       this.navController.navigateForward('/inicio')
     }else {
       console.log("Login no aceptado");
     }
-  }
+  } 
 
 }

@@ -48,6 +48,10 @@ const routes: Routes = [
     path: 'infinite-scroll',
     loadChildren: () => import('./infinite-scroll/infinite-scroll.module').then( m => m.InfiniteScrollPageModule)
   },
+  {
+    path: 'registrar',
+    loadChildren: () => import('./registrar/registrar.module').then( m => m.RegistrarPageModule)
+  },
  
 ];
 
