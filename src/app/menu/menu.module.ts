@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { InfiniteScrollPageRoutingModule } from './infinite-scroll-routing.module';
+import { MenuPageRoutingModule } from './menu-routing.module';
 
-import { InfiniteScrollPage } from './infinite-scroll.page';
+import { MenuPage } from './menu.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    InfiniteScrollPageRoutingModule
+    MenuPageRoutingModule
   ],
-  declarations: [InfiniteScrollPage]
+  declarations: [MenuPage]
 })
-export class InfiniteScrollPageModule {}
+export class MenuPageModule {}

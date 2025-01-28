@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { InfiniteScrollPage } from './infinite-scroll.page';
+import { CheckboxPage } from './checkbox.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: InfiniteScrollPage
+    component: CheckboxPage
   }
 ];
 
@@ -14,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class InfiniteScrollPageRoutingModule {}
+export class CheckboxPageRoutingModule {}

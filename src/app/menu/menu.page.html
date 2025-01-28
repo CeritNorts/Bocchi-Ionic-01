@@ -1,0 +1,87 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Menu</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div>
+    <ion-menu content-id="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Menu Materias</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">Este es el menu de materias</ion-content>
+    </ion-menu>
+    <div class="ion-page" id="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+          <ion-title>Materias</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding"> Materias.old </ion-content>
+    </div>
+  </div>
+  <div>
+    <ion-menu type="overlay" content-id="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Menu Materias</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <ion-menu-toggle>
+          <ion-button>Iot</ion-button>
+        </ion-menu-toggle>
+      </ion-content>
+    </ion-menu>
+    
+    <div class="ion-page" id="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Menu Materias</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <h2>MateriasA no reprobar espero</h2>
+        <ion-radio-group value="overlay">
+          <ion-item>
+            <ion-radio value="overlay">
+              <code>Desarrollo de Aplicacion mobiles</code>
+            </ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-radio value="reveal">
+              <code>Base de datos en la nube</code>
+            </ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-radio value="push">
+              <code>Princicpios de Iot</code>
+            </ion-radio>
+          </ion-item>
+        </ion-radio-group>
+        <br />
+        <ion-menu-toggle>
+          <ion-button>YES</ion-button>
+        </ion-menu-toggle>
+      </ion-content>
+    </div>
+    
+    <script>
+      const menu = document.querySelector('ion-menu');
+      const radioGroup = document.querySelector('ion-radio-group');
+    
+      radioGroup.addEventListener('ionChange', (event) => {
+        menu.type = event.detail.value;
+      });
+    </script>
+  </div>
+</ion-content>

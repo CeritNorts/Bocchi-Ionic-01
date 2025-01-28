@@ -1,0 +1,67 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Accordeon</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-accordion-group>
+    <ion-accordion value="first">
+      <ion-item slot="header" color="light">
+        <ion-label>TIDSM</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">INFORMCION</div>
+    </ion-accordion>
+    <ion-accordion value="second">
+      <ion-item slot="header" color="light">
+        <ion-label>TECNOLOGIA</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">Desarrollo</div>
+    </ion-accordion>
+    <ion-accordion value="third">
+      <ion-item slot="header" color="light">
+        <ion-label>SOFTWARE</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">Multiplataforma</div>
+    </ion-accordion>
+  </ion-accordion-group>
+
+  <div>
+    <ion-accordion-group>
+      <ion-accordion value="first">
+        <ion-item slot="header" color="light">
+          <ion-label>Eliezer</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">Emanuel</div>
+      </ion-accordion>
+      <ion-accordion value="second">
+        <ion-item slot="header" color="light">
+          <ion-label>Juan Pablo</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">Oscar</div>
+      </ion-accordion>
+      <ion-accordion value="third">
+        <ion-item slot="header" color="light">
+          <ion-label>Tano</ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">Tano</div>
+      </ion-accordion>
+    </ion-accordion-group>
+    
+    <ion-button onclick="toggleAccordion()">CAPI-TEAM</ion-button>
+    
+    <script>
+      const accordionGroup = document.querySelector('ion-accordion-group');
+      var toggleAccordion = () => {
+        if (accordionGroup.value === 'second') {
+          accordionGroup.value = undefined;
+        } else {
+          accordionGroup.value = 'second';
+        }
+      };
+    </script>
+  </div>
+</ion-content>

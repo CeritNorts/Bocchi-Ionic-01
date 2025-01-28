@@ -44,14 +44,23 @@ const routes: Routes = [
     path: 'grid',
     loadChildren: () => import('./grid/grid.module').then( m => m.GridPageModule)
   },
-  {
-    path: 'infinite-scroll',
-    loadChildren: () => import('./infinite-scroll/infinite-scroll.module').then( m => m.InfiniteScrollPageModule)
-  },
+   
   {
     path: 'registrar',
     loadChildren: () => import('./registrar/registrar.module').then( m => m.RegistrarPageModule)
+  },  {
+    path: 'accordion',
+    loadChildren: () => import('./accordion/accordion.module').then( m => m.AccordionPageModule)
   },
+  {
+    path: 'checkbox',
+    loadChildren: () => import('./checkbox/checkbox.module').then( m => m.CheckboxPageModule)
+  },
+  {
+    path: 'menu',
+    loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
+  },
+
  
 ];
 
